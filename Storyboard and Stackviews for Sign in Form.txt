@@ -1,0 +1,34 @@
+//
+//  ViewController.swift
+//  Kien
+//
+//  Created by Kien Nguyen on 2021-03-27.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var userTextField: UITextField!
+    
+    @IBOutlet weak var passWordTextView: UITextField!
+    
+    @IBOutlet weak var signinButton: UIButton!
+
+    var radius = 10
+
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        userTextField.layer.cornerRadius = CGFloat(radius)
+        passWordTextView.layer.cornerRadius=CGFloat(radius)
+        signinButton.layer.cornerRadius=CGFloat(radius)
+        
+        
+    }
+
+
+}
+
